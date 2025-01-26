@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/employee-service
-  VERSION: $(git rev-list --count HEAD)
+  VERSION: ${{(git rev-list --count HEAD)}}
 
 jobs:
   build:
