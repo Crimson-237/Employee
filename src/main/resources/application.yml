@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: employee
+  main:
+    lazy-initialization: true
+  datasource:
+    url: jdbc:h2:mem:employee-Db
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+
