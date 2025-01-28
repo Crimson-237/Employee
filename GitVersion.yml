@@ -1,4 +1,4 @@
-mode: Mainline
+mode: ContinuousDelivery
 tag-prefix: '[vV]'
 commit-message-incrementing: MergeMessageOnly
 branches:
