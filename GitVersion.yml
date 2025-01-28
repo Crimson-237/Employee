@@ -12,5 +12,3 @@ branches:
     is-mainline: true
     increment: Patch
     regex: main$
-output:
-  format: json
