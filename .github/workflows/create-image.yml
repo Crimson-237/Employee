@@ -65,7 +65,7 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Verify JAR file
-      run: ls -l target/
+      run: ls -l ./target/
       
     - name: Build and push
       uses: docker/build-push-action@v6
