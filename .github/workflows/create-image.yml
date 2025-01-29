@@ -76,4 +76,4 @@ jobs:
         password: ${{ secrets.CR_GITHUB_TOKEN }}
 
     - name: Publish container image
-      run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.semVer }}
+      run: docker push ${{ env.REGISTRY }}/Crimson@237/${{ env.IMAGE_NAME }}:${{ env.semVer }}
