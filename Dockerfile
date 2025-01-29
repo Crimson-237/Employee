@@ -1,13 +1,12 @@
 FROM eclipse-temurin:21 AS builder
 WORKDIR workspace
 
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/employee-service.jar
 COPY ${JAR_FILE} employee-service.jar
 
 RUN java -Djarmode=layertools -jar employee-service.jar extract
 
 FROM eclipse-temurin:21
-
 RUN useradd spring
 USER spring
 
