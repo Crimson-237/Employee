@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.actor }}/employee-service
+  IMAGE_NAME: Crimson@237/employee-service
 
 jobs:
   build:
