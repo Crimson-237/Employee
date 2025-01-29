@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ms-employee/employee-service
+  IMAGE_NAME: ${{ github.actor }}/employee-service
 
 jobs:
   build:
@@ -76,4 +76,4 @@ jobs:
         password: ${{ secrets.CR_GITHUB_TOKEN }}
 
     - name: Publish container image
-      run: docker push ${{ env.REGISTRY }}/${{ github.actor }}/${{ env.IMAGE_NAME }}:${{ env.semVer }}
+      run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.semVer }}
