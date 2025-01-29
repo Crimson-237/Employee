@@ -32,9 +32,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean install -DskipTests
-
-    - name: Verify JAR file
-      run: ls -l target/
         
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v3.1.11
