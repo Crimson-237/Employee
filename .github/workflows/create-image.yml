@@ -55,7 +55,7 @@ jobs:
       uses: anchore/scan-action@v3
       id: scan
       with:
-        image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.semVer }}
+        image: ${{ env.IMAGE_NAME }}:${{ env.semVer }}
         fail-build: true
         severity-cutoff: high
         output-format: sarif
