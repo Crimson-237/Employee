@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: Crimson@237/employee-service
+  IMAGE_NAME: Crimson/employee-service
 
 jobs:
   build:
